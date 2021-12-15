@@ -1,0 +1,21 @@
+app_name = "awesome web"
+
+# possible values: DEBUG, INFO, WARNING, ERROR, FATAL
+log_level = "DEBUG"
+JwtSecret = "cacswdcdcd"
+
+[mysql]
+host = "127.0.0.1"
+port = 3306
+user = "root"
+password = "root"
+database = "go-db"
+tablePrefix = "blog_"
+
+[redis]
+ip = "127.0.0.1"
+port = 7381
+
+[log]
+log_file_path = "./"
+log_file_name = "test3"
