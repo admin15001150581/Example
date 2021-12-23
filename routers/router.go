@@ -2,6 +2,7 @@ package routers
 
 import (
 	"example/middleware/jwt"
+	"example/routers/api/redis"
 	v1 "example/routers/api/v1"
 	"github.com/gin-gonic/gin"
 )
@@ -37,6 +38,8 @@ func InitRouter()*gin.Engine  {
 	r.GET("/email",v1.SendEmail)
 	r.GET("/qrcode",v1.Qrcode)
 	r.GET("/poster",v1.Poster)
+
+	r.GET("op/redis", redis.Set)
 
 
 	return r
